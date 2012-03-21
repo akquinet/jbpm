@@ -80,6 +80,7 @@
     <module>jbpm-flow</module>
     <module>jbpm-flow-builder</module>
     <module>jbpm-persistence-jpa</module>
+    <module>jbpm-persistence-jpa2</module>
     <module>jbpm-bam</module>
     <module>jbpm-bpmn2</module>
     <module>jbpm-bpmn2-emfextmodel</module>
