@@ -8,6 +8,7 @@
 /*.ipr
 /*.iws
 /*.iml
+/META-INF
 
 # Repository wide ignore mac DS_Store files
 .DS_Store
