@@ -1,0 +1,33 @@
+
+
+Patch includes:
+
+1) 	add new ORM file for JPA 2.0 (src/main/resources/META-INF/JPA2.0_Taskorm.xml)
+	https://issues.jboss.org/browse/JBPM-3401
+
+2)  remove class org.jbpm.userprofile.UserProfileManager.java as it is never used. Furthermore the class user SEAM 2. 
+	remove appertaining JUnit test: org.jbpm.userprofile.UserProfileManagerTest.java
+	
+3) 	update POM (SEAM 3 and JSF (Richfaces) Fix):
+	- remove all dependencies to seam 2
+		<dependency>
+			<groupId>org.jboss.seam</groupId>
+			<artifactId>jboss-seam</artifactId>
+			<version>2.2.2.Final</version>
+		</dependency>
+
+	- add following dependencies:
+		<dependency>
+			<groupId>com.thoughtworks.xstream</groupId>
+			<artifactId>xstream</artifactId>
+			<version>1.4.1</version>
+		</dependency>
+		
+	- change scope for dom4j to provided
+		<dependency>
+			<groupId>dom4j</groupId>
+			<artifactId>dom4j</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+
